@@ -2,7 +2,7 @@
 
 ## Prerequisites
 - Oculus headset
-- Unity version [2021.3.8f1](https://unity3d.com/get-unity/download/archive)
+- Unity version [2021.3.15f1](https://unity3d.com/unity/qa/lts-releases)
 - In Unity project, install the XR packages through **Window > Package Manager > (on the top) Packages: Unity Registry**:
 
     - Oculus XR Plugin
