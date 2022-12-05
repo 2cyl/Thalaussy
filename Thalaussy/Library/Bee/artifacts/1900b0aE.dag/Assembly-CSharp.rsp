@@ -396,6 +396,14 @@
 "Assets/Scripts/Gun.cs"
 "Assets/Scripts/Hand.cs"
 "Assets/Scripts/Monster.cs"
+"Assets/Unique Projectiles/Scripts/ParticleSystemController/ParticleSystemController.cs"
+"Assets/Unique Projectiles/Scripts/ParticleSystemController/ParticleSystemControllerEditor.cs"
+"Assets/Unique Projectiles/Scripts/ParticleSystemController/SaveParticleSystemScript.cs"
+"Assets/Unique Projectiles/Scripts/ParticleSystemController/Serializables.cs"
+"Assets/Unique Projectiles/Scripts/UniqueProjectiles/CameraShakeSimpleScript.cs"
+"Assets/Unique Projectiles/Scripts/UniqueProjectiles/ProjectileMoveScript.cs"
+"Assets/Unique Projectiles/Scripts/UniqueProjectiles/RotateToMouseScript.cs"
+"Assets/Unique Projectiles/Scripts/UniqueProjectiles/SpawnProjectilesScript.cs"
 -langversion:9.0
 
 /deterministic
