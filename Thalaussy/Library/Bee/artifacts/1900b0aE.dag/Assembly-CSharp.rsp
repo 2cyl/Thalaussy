@@ -396,6 +396,8 @@
 "Assets/Scripts/Gun.cs"
 "Assets/Scripts/Hand.cs"
 "Assets/Scripts/Monster.cs"
+"Assets/Scripts/Player.cs"
+"Assets/Scripts/SpawnManager.cs"
 "Assets/Unique Projectiles/Scripts/ParticleSystemController/ParticleSystemController.cs"
 "Assets/Unique Projectiles/Scripts/ParticleSystemController/ParticleSystemControllerEditor.cs"
 "Assets/Unique Projectiles/Scripts/ParticleSystemController/SaveParticleSystemScript.cs"

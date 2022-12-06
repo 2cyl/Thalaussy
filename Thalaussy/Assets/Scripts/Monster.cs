@@ -19,7 +19,9 @@ public class Monster : MonoBehaviour {
     public enum State {
         ALIVE, DYING, SINKING
     }
-    
+
+    public int damage;
+
     public State monsterState = State.ALIVE;
     void Start () {
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -48,6 +50,7 @@ public class Monster : MonoBehaviour {
     }
     public void Attack() {
         audioSource.PlayOneShot(hitClip);
+        //player.Hurt(damage);
     }
 
     public void Hurt(int damage) {
