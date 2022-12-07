@@ -11,6 +11,7 @@ public class SpawnManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Spawn();
         InvokeRepeating("Spawn", spawnTime, spawnTime);
     }
 
@@ -24,5 +25,6 @@ public class SpawnManager : MonoBehaviour
     {
         Transform spawn = spawnLocations[Random.Range(0, spawnLocations.Length)];
         GameObject monster = Instantiate(monsterPrefab, spawn.position, spawn.rotation);
+        monster.GetComponent<Monster>().ScriptManager = this.gameObject;
     }
 }

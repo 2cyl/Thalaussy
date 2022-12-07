@@ -32,6 +32,7 @@ public class Player : MonoBehaviour
         if (playerState == State.ALIVE)
         {
             health -= damage;
+            Debug.Log("current health: " + health);
             if (health <= 0)
             {
                 Die();
@@ -41,6 +42,7 @@ public class Player : MonoBehaviour
 
     void Die()
     {
+        Debug.Log("we died");
         SceneManager.LoadScene("Thalaussy");
     }
 }

@@ -7,9 +7,10 @@ public class Monster : MonoBehaviour {
 
     public GameObject player;
     public float attackRange;
-    //private NavMeshAgent navMeshAgent;
+    private NavMeshAgent navMeshAgent;
     private AudioSource audioSource;
     private Animator animator;
+    public GameObject ScriptManager;
     public AudioClip spawnClip;
     public AudioClip hitClip;
     public AudioClip dieClip;
@@ -53,6 +54,7 @@ public class Monster : MonoBehaviour {
     }
     public void Attack() {
         audioSource.PlayOneShot(hitClip);
+        this.ScriptManager.GetComponent<Player>().Hurt(damage);
         //player.Hurt(damage);
     }
 
@@ -62,6 +64,7 @@ public class Monster : MonoBehaviour {
             currHealth -= damage;
             if (currHealth <= 0)
                 Die();
+                Debug.Log("monster dying");
         }
     }
 
@@ -70,6 +73,7 @@ public class Monster : MonoBehaviour {
         audioSource.PlayOneShot(dieClip);
         //navMeshAgent.isStopped = true;
         animator.SetTrigger("Dead");
+        StartSinking();
     }
     public void StartSinking() {
         monsterState = State.SINKING;
