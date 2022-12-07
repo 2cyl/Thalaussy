@@ -3712,7 +3712,7 @@ GameObject:
   - component: {fileID: 2051887737}
   - component: {fileID: 2051887738}
   - component: {fileID: 2051887739}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: ScriptManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
