@@ -430,7 +430,7 @@ GameObject:
   - component: {fileID: 69818421}
   - component: {fileID: 69818420}
   - component: {fileID: 69818423}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -615,8 +615,8 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
+  m_RenderPostProcessing: 1
+  m_Antialiasing: 1
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
@@ -3928,7 +3928,8 @@ GameObject:
   - component: {fileID: 2051887735}
   - component: {fileID: 2051887737}
   - component: {fileID: 2051887738}
-  m_Layer: 0
+  - component: {fileID: 2051887739}
+  m_Layer: 4
   m_Name: ScriptManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4051,6 +4052,23 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2051887739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051887734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: c20c144e02d0b084c9a1553469e2491e, type: 2}
 --- !u!4 &2061958294 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1644348084331912226, guid: e8779266c52d10a4ab96db0145bb40bc,
