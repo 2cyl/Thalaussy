@@ -10,6 +10,7 @@ public class Monster : MonoBehaviour {
     private NavMeshAgent navMeshAgent;
     private AudioSource audioSource;
     private Animator animator;
+    public GameObject ScriptManager;
     public AudioClip spawnClip;
     public AudioClip hitClip;
     public AudioClip dieClip;
@@ -53,6 +54,7 @@ public class Monster : MonoBehaviour {
     }
     public void Attack() {
         audioSource.PlayOneShot(hitClip);
+        this.ScriptManager.GetComponent<Player>().Hurt(damage);
         //player.Hurt(damage);
     }
 

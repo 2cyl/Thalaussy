@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.19126335, g: 0.5032162, b: 0.57276326, a: 1}
+  m_IndirectSpecularColor: {r: 0.19307573, g: 0.50613815, b: 0.5744735, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1620,6 +1620,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 69818418}
   attackRange: 1.3
+  ScriptManager: {fileID: 0}
   spawnClip: {fileID: 8300000, guid: a6ca8b7ab03ea1344903ed55145ed90c, type: 3}
   hitClip: {fileID: 8300000, guid: a312a701933573945bfe49c0e388cda0, type: 3}
   dieClip: {fileID: 8300000, guid: bf648643fe845674384e3571e60a95b4, type: 3}
@@ -4150,6 +4151,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 69818418}
+    - target: {fileID: 5113875741047151320, guid: 76fa74b7fcb94bd4fa6f12b8341a186e,
+        type: 3}
+      propertyPath: ScriptManager
+      value: 
+      objectReference: {fileID: 2051887734}
     - target: {fileID: 5113875741047151327, guid: 76fa74b7fcb94bd4fa6f12b8341a186e,
         type: 3}
       propertyPath: m_Avatar
@@ -4159,6 +4165,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: rigpus
+      objectReference: {fileID: 0}
+    - target: {fileID: 5348388726682118026, guid: 76fa74b7fcb94bd4fa6f12b8341a186e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76fa74b7fcb94bd4fa6f12b8341a186e, type: 3}
