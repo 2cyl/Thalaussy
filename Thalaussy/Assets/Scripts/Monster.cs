@@ -24,6 +24,7 @@ public class Monster : MonoBehaviour {
 
     public State monsterState = State.ALIVE;
     void Start () {
+        player = GameObject.FindGameObjectsWithTag("MainCamera")[0];
         navMeshAgent = GetComponent<NavMeshAgent>();
         audioSource = GetComponent<AudioSource>();
         audioSource.PlayOneShot(spawnClip);
@@ -35,10 +36,12 @@ public class Monster : MonoBehaviour {
     void Update () {
 
         if (monsterState == State.ALIVE) {
-            navMeshAgent.SetDestination(player.transform.position);
+            //navMeshAgent.SetDestination(player.transform.position);
+            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, 0.01f);
             Vector3 distanceVector = transform.position - player.transform.position;
             distanceVector.y = 0;
             float distance = distanceVector.magnitude;
+            //Debug.Log(player.transform.position);
             if (distance <= attackRange) {
                 animator.SetBool("Attack", true);
             }

@@ -41,6 +41,6 @@ public class Player : MonoBehaviour
 
     void Die()
     {
-
+        SceneManager.LoadScene("Thalaussy");
     }
 }

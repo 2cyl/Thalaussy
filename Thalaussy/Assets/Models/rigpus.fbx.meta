@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 932e0f691f3009f4c9788a9ba7d2cc81
+guid: 01978405dc03e3d4f869851bc543899d
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -33,18 +33,18 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature|Action
-      takeName: Armature|Action
-      internalID: 885944232402757753
+      name: Armature|Attack
+      takeName: Armature|Attack
+      internalID: 4723146814002874508
       firstFrame: 0
-      lastFrame: 1
+      lastFrame: 90
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -62,9 +62,9 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature|Vibe
-      takeName: Armature|Vibe
-      internalID: 3388904847919599486
+      name: Armature|Vibing
+      takeName: Armature|Vibing
+      internalID: 7584144485692903969
       firstFrame: 0
       lastFrame: 90
       wrapMode: 0
