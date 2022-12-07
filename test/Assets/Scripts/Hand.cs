@@ -24,7 +24,7 @@ void OnTriggerStay(Collider other)
         if (interactor.hasSelection)
         {
             float trigger = controllerActionTrigger.action.ReadValue<float>();
-            Debug.Log("Grabbing gun.");
+            //Debug.Log("Grabbing gun.");
             if (trigger != 0 && prevTrigger == 0)
             {
                 other.gameObject.GetComponent<Gun>().Fire();

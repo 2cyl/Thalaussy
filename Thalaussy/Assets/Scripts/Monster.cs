@@ -7,7 +7,7 @@ public class Monster : MonoBehaviour {
 
     public GameObject player;
     public float attackRange;
-    private NavMeshAgent navMeshAgent;
+    //private NavMeshAgent navMeshAgent;
     private AudioSource audioSource;
     private Animator animator;
     public AudioClip spawnClip;
@@ -25,7 +25,7 @@ public class Monster : MonoBehaviour {
     public State monsterState = State.ALIVE;
     void Start () {
         player = GameObject.FindGameObjectsWithTag("MainCamera")[0];
-        navMeshAgent = GetComponent<NavMeshAgent>();
+        //navMeshAgent = GetComponent<NavMeshAgent>();
         audioSource = GetComponent<AudioSource>();
         audioSource.PlayOneShot(spawnClip);
         animator = GetComponent<Animator>();
@@ -68,13 +68,13 @@ public class Monster : MonoBehaviour {
     void Die() {
         monsterState = State.DYING;
         audioSource.PlayOneShot(dieClip);
-        navMeshAgent.isStopped = true;
+        //navMeshAgent.isStopped = true;
         animator.SetTrigger("Dead");
     }
     public void StartSinking() {
         monsterState = State.SINKING;
-        navMeshAgent.enabled = false;
-        Destroy(gameObject, 5);
+        //navMeshAgent.enabled = false;
+        Destroy(gameObject, 2);
     }
 
 
